@@ -1,10 +1,11 @@
 :root {
-    --font-color-1: rgb( 255, 255, 255);
+    --font-color-1: rgb(255, 255, 255);
     --primary-color: ;
-    --secondary-color: linear-gradient(103.17deg, rgba(7, 16, 81, 0.8) 3.99%, rgba(13, 31, 98, 0.8) 88.04%);
+    --secondary-color: linear-gradient(103.17deg, rgba(7, 16, 81, 0.95) 3.99%, rgba(13, 31, 98, 0.75) 88.04%);
 }
 
 .menu {
+    height: 4rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,15 +20,31 @@
     display: flex;
     width: 100%;
     color: var(--font-color-1);
+    margin-right: 50px;
 }
 
 .menu ul li {
-    padding: 10px;    
+    margin: auto 20px;
 }
 
-.menu h2, .menu ul li a {
-    text-decoration: none;    
-    color: rgb( 255, 255, 255);
+.menu h2,
+.menu ul li a {
+    text-decoration: none;
+    color: var(--font-color-1)
+}
+
+.menu ul li button {
+    border: 0;
+    background-color: var(--font-color-1);
+    padding: 10px;
+    border-radius: 12px 12px 12px 0;
+    cursor: pointer;
+    color: #1A3E83;
+}
+
+.menu-services {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .menu-content {
@@ -35,10 +52,24 @@
     justify-content: space-between;
 }
 
-.logo { 
-    width: 170px;  
+.logo {
+    margin-left: 50px;
+    width: 170px;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
 
+.logo-name {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fundo {
+    width: 100%;
+}
+
+.fundo2 {
+    position: absolute;
+    width: 100%;
+    opacity: 0.75;
+}
