@@ -1,0 +1,44 @@
+:root {
+    --font-color-1: rgb( 255, 255, 255);
+    --primary-color: ;
+    --secondary-color: linear-gradient(103.17deg, rgba(7, 16, 81, 0.8) 3.99%, rgba(13, 31, 98, 0.8) 88.04%);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    padding: 12px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    color: var(--font-color-1);
+}
+
+.menu ul li {
+    padding: 10px;    
+}
+
+.menu h2, .menu ul li a {
+    text-decoration: none;    
+    color: rgb( 255, 255, 255);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo { 
+    width: 170px;  
+    display: flex;
+    justify-content: space-around;
+
+}
+
