@@ -6,7 +6,6 @@ import retangulo from '../../assets/retangulo.png';
 import ti from '../../assets/ti.svg';
 import otimizacao from '../../assets/otimizacao.svg';
 import manutencao from '../../assets/manutencao.svg';
-import WhatsappOutlinedIcon from '@mui/icons-material/WhatsappOutlined';
 
 export default function Home() {
     return (
@@ -25,13 +24,14 @@ export default function Home() {
                 <nav className="menu-services">
                     <ul>
                         <li><a href="#services">Serviços</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="">Contato</a></li>
                         <li><button>Abrir um chamado</button></li>
                     </ul>
                 </nav>
             </section>
+            
             <section id="services" className="services-container">
-                <div className="flex-item">
+                    <div className="flex-item">
                     <container className="rectangle-icon"><img src={ti} alt='ti' className="icon"></img></container>                    
                     <h3>Suporte T.I</h3>
                     <p>Reparos, assistência técnica, prestação de serviços corretivos e preventivos
@@ -54,7 +54,7 @@ export default function Home() {
                 <div className="flex-item-2">
                     <container className="back-text">
                         <h3>Abra um chamado</h3>
-                        <img src={WhatsappOutlinedIcon} alt='whats'></img>
+                        <img alt='whats'></img>
                         </container>                   
                 </div>
                 <div className="flex-item-2">
